@@ -1,107 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             color: white;
-            
             font-family: 'Montserrat', sans-serif;
         }
-        body{
+
+        body {
             background-color: red;
         }
-        #container1{
-            display: flex;
+
+        #container1 {
+            
             padding: 100px;
+            height: 65vh;
         }
-        #left{
+
+        #left {
             text-align: left;
             padding-left: 10px;
             font-size: larger;
-            /* border: 2px solid yellow; */
+            float: left;
+            width: 50%;
         }
-        #left h1{
+
+        #left h1 {
             margin-bottom: 50px;
-            font-size: 40px;
-           
+            font-size: 45px;
+            font-weight: lighter;
+
         }
-        #left p{
+
+        #left p {
             margin-top: 50px;
             font-size: 14px;
-            
-            
+            max-width: 75%;
         }
-        #right{
-            width: 100%;
-            display: flex;
+
+        #right {
+            width: 50%;
+            float: right;
             padding-left: 200px;
-            /* border: 2px solid yellow; */
-            justify-content: center;
-            align-items: center;
         }
-        #right img{
-            
-            width: 220px;
+
+        #right img {
+
+            width: 250px;
             filter: invert();
         }
-        #container2{
-            display: flex;
-            height: 300px;
+
+        #container2 {
+            height: 35vh;
+            
+            overflow:hidden;
         }
-        .text{
-            width: 33.3%;
+
+        .text {
+            
+            width: 32%;
+            height: 100%;
+            float: left;
             padding: 50px;
             background-color: rgb(178, 15, 15);
-            margin: 0px 5px 0px 5px;
         }
-        .text h3{
+
+        .text h3 {
             margin-bottom: 50px;
         }
-       .text p{
-        font-size: 13px;
-        font-weight: lighter;
-       }
+        .text p {
+            font-size: 13px;
+            font-weight: lighter;
+        }
+        #item3{
+        float: right;
+        }
+        #item2{
+        position: relative;
+        margin-left: 29px;
+        }
     </style>
 </head>
+
 <body>
     <div id="container1">
-    <div id="left">
-    <h1>Down With The State</h1>
-    <p>Abadoned the left vs.right paradigm and adopt new ideals,where consistancy and logic reign supreme</p>
-    </div>
-    <div id="right"><img src="img1.png" alt="not found"></div>
+        <div id="left">
+            <h1>Down With The State</h1>
+            <p>Abadoned the left vs.right paradigm and adopt new ideals,where consistancy and logic reign supreme</p>
+        </div>
+        <div id="right"><img src="img1.png" alt="not found"></div>
     </div>
     <div id="container2">
-    <div class="text">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem nesciunt in neque corporis harum?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam est quidem consequuntur aperiam labore porro.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque dolores natus repellendus optio officiis accusamus quam modi iure quas voluptate? Minus blanditiis sunt commodi voluptates eos molestias nisi maxime eum?
-        </p>
-    </div>
-    <div class="text">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem nesciunt in neque corporis harum?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, ratione dolorum facilis illo velit ad.
-        </p>
-    </div>
-    <div class="text">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem nesciunt in neque corporis harum?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quas deserunt explicabo sequi perspiciatis vitae ipsam architecto amet? Esse similique maiores reiciendis nesciunt, id commodi!
-            
-        </p>
-    </div>
+        <div id="item1"class="text">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem
+                nesciunt in neque corporis harum?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam est quidem consequuntur aperiam
+                labore porro.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque dolores natus repellendus optio officiis
+                accusamus quam modi iure quas voluptate? Minus blanditiis sunt commodi voluptates eos molestias nisi
+                maxime eum?
+            </p>
+        </div>
+        <div id="item2"class="text">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem
+                nesciunt in neque corporis harum?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, ratione dolorum facilis illo velit
+                ad.
+            </p>
+        </div>
+        <div id="item3"class="text">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem omnis. Cumque odio vitae, quidem
+                nesciunt in neque corporis harum?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quas deserunt explicabo sequi
+                perspiciatis vitae ipsam architecto amet? Esse similique maiores reiciendis nesciunt, id commodi!
+
+            </p>
+        </div>
     </div>
 </body>
+
 </html>

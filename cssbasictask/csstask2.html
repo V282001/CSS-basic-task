@@ -14,19 +14,20 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         header,footer{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* text-align: center; */
-           
             height: 10vh;
             background-color: skyblue;
+        }
+        header p,footer p{
+            padding: 25px;
+        }
+        p{
+            text-align: center;
         }
         footer{
             background-color: orange;
         }
         #container{
-            display: flex;
+            
             height:79vh;
             margin:10px 0px 10px 0px;
             /* background-color: rgb(52, 178, 52); */
@@ -34,46 +35,44 @@
         
         #left{
             padding-top: 30px;
-            display: flex; 
-            justify-content: center;
-            width: 25%;
+            height: 100%;
+            float: left;
+            width: 28.5%;
             background-color: rgb(255, 4, 88);
             margin: 0px 10px 0px 0px;
         }
         #right{
-            display: flex;
-            flex-direction: column;
-            width: 75%;
-            /* background-color: rgb(255, 4, 88); */
+           float: right;
+           height: 100%;
+            width: 70%;
+           
             margin: 0px 0px 0px 10px;
         }
         #up{
             padding-top: 30px;
-            display: flex; 
-            justify-content: center;
-            height: 80%;
+            height: 75%;
             background-color: aqua;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         #down{
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            height: 20%;
+            height: 23%;
             background-color: rgb(229, 255, 0);
-            margin-top: 5px;
+            margin-top: 11px;
+        }
+        #down p{
+            padding: 55px;
         }
     </style>
 </head>
 <body>
-    <header><span>Header</span></header>
+    <header><p>Header</p></header>
     <div id="container">
-    <div id="left"> <span>Sidebar</span></div>
+    <div id="left"> <p>Sidebar</p></div>
     <div id="right">
-        <div id="up"><span>Main Content</span></div>
-        <div id="down"><span>Extra Content</span></div>
+        <div id="up"><p>Main Content</p></div>
+        <div id="down"><p>Extra Content</p></div>
     </div>
     </div>
-    <footer><span>Footer</span></footer>
+    <footer><p>Footer</p></footer>
 </body>
 </html>
